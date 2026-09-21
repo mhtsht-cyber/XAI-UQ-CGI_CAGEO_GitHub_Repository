@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript and this software release."
+title: "XAI-UQ-CGI computational geodetic inversion reproducibility repository"
+type: software
+version: "1.0.0"
+date-released: "2026-09-21"
+authors:
+  - family-names: "Sheode"
+    given-names: "Mohit"
+    orcid: "https://orcid.org/0009-0009-5719-5084"
+  - family-names: "Kishan"
+    given-names: "D."
+    orcid: "https://orcid.org/0000-0003-1058-3548"
+license: MIT
+keywords:
+  - geodetic inversion
+  - InSAR
+  - GNSS
+  - uncertainty quantification
+  - explainable AI
+  - Mogi model
+  - reproducibility

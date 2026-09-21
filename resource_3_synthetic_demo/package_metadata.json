@@ -1,0 +1,30 @@
+{
+  "repository_resource": 3,
+  "package_version": "3.0",
+  "date": "2026-09-21",
+  "article_title": "Explainable and Uncertainty-Aware Computational Geodetic Inversion: A Review and Framework for Multi-Source Earth Observation",
+  "journal": "Computers & Geosciences",
+  "authors": [
+    "Mohit Sheode",
+    "D. Kishan"
+  ],
+  "corresponding_author": {
+    "name": "Mohit Sheode",
+    "affiliation": "Department of Civil Engineering, Maulana Azad National Institute of Technology (MANIT), Bhopal 462003, India",
+    "emails": [
+      "mhtsht@gmail.com",
+      "223111001@stu.manit.ac.in"
+    ]
+  },
+  "fixed_seed": 20260729,
+  "code_licence": "MIT",
+  "data_documentation_licence": "CC BY 4.0",
+  "manuscript_figure_files": {
+    "Fig. 6": "f6_data.png",
+    "Fig. 7": "f7_fit.png",
+    "Fig. 8": "f8_posterior.png",
+    "Fig. 9": "f9_tradeoff.png",
+    "Fig. 10": "f10_calibration.png",
+    "Fig. 11": "f11_mismatch.png"
+  }
+}

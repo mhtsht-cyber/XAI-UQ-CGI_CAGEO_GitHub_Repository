@@ -1,0 +1,161 @@
+{
+  "seed": 20260729,
+  "nu": 0.25,
+  "m_true": {
+    "x0": 1000.0,
+    "y0": -500.0,
+    "d": 3500.0,
+    "dV": 3000000.0
+  },
+  "grid": {
+    "xmin": -4000,
+    "xmax": 4000,
+    "ymin": -4000,
+    "ymax": 4000,
+    "n": 41,
+    "spacing_m": 200,
+    "keep_prob": 0.25,
+    "decimation": "fixed Bernoulli mask, fixed seed"
+  },
+  "los_enu_raw": [
+    0.621,
+    -0.112,
+    0.776
+  ],
+  "los_sign": "positive LOS = motion toward satellite (range decrease)",
+  "ramp_true": {
+    "c0": 0.002,
+    "cx": 1.2e-06,
+    "cy": -8e-07,
+    "treatment": "estimated jointly as 3 nuisance parameters (InSAR block only)"
+  },
+  "noise": {
+    "insar": 0.015,
+    "gnss_h": 0.002,
+    "gnss_v": 0.005,
+    "dist": "Gaussian iid zero-mean"
+  },
+  "gnss_xy": [
+    [
+      -3000,
+      -2500
+    ],
+    [
+      -1500,
+      2500
+    ],
+    [
+      0,
+      -3200
+    ],
+    [
+      500,
+      1500
+    ],
+    [
+      2800,
+      -1000
+    ],
+    [
+      -2800,
+      800
+    ],
+    [
+      1800,
+      3000
+    ],
+    [
+      3200,
+      2200
+    ],
+    [
+      -500,
+      -800
+    ]
+  ],
+  "param_names": [
+    "x0",
+    "y0",
+    "d",
+    "dV",
+    "c0",
+    "cx",
+    "cy"
+  ],
+  "param_units": [
+    "m",
+    "m",
+    "m",
+    "m^3",
+    "m",
+    "m/m",
+    "m/m"
+  ],
+  "prior": "uniform over [lower, upper] bounds",
+  "bounds_lower": [
+    -4000,
+    -4000,
+    300,
+    10000.0,
+    -0.05,
+    -1e-05,
+    -1e-05
+  ],
+  "bounds_upper": [
+    4000,
+    4000,
+    9000,
+    20000000.0,
+    0.05,
+    1e-05,
+    1e-05
+  ],
+  "ls_initial": [
+    0.0,
+    0.0,
+    2000.0,
+    1000000.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mcmc_init_scales": [
+    200,
+    200,
+    300,
+    200000.0,
+    0.002,
+    2e-07,
+    2e-07
+  ],
+  "solver": {
+    "pkg": "scipy.optimize.least_squares",
+    "method": "trf",
+    "loss": "linear",
+    "x_scale": "jac",
+    "ftol": 1e-12,
+    "xtol": 1e-12,
+    "jac": "2-point finite difference",
+    "covariance": "(J^T J)^-1 scaled by reduced chi-square (local linearized)"
+  },
+  "mcmc": {
+    "nwalkers": 40,
+    "nsteps": 9000,
+    "burn": 2250,
+    "thin": 5,
+    "n_ensembles": 4,
+    "dispersion": 4.0,
+    "dispersion_note": "centers ~ N(LS, (4*init_scale)^2), clipped to bounds"
+  },
+  "mc": {
+    "n_realizations": 300,
+    "interval": "linearized least-squares normal intervals"
+  },
+  "los_enu_normalized": [
+    0.6209,
+    -0.112,
+    0.7759
+  ],
+  "n_insar": 427,
+  "n_gnss": 9
+}

@@ -1,0 +1,14 @@
+﻿Metric,Value,Notes
+Scopus export records,151,Original Scopus CSV record count
+Dimensions export records,500,Original Dimensions CSV record count after metadata header
+Scopus records with DOI,144,Unique DOI values in Scopus export
+Dimensions records with DOI,500,Unique DOI values in Dimensions export
+DOI overlap,95,Records appearing in both exports by DOI
+Combined unique pool,556,Deduplicated by DOI when present; otherwise normalized title
+Scopus records 2020 onward,58,Raw export count
+Dimensions records 2020 onward,189,Raw export count
+Raw recent emphasis total,247,This equals 247; includes overlap across databases
+Deduplicated unique records 2020 onward,211,This is the unique recent pool after DOI/title deduplication
+Scopus records 2024 onward,24,Raw export count
+Dimensions records 2024 onward,79,Raw export count
+Deduplicated unique records 2024 onward,89,Unique after DOI/title deduplication

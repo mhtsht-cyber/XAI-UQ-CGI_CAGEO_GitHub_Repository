@@ -1,0 +1,1 @@
+Derived bibliographic-audit files and documentation in this directory are released under CC BY 4.0, subject to the note that original raw Scopus and Dimensions exports are not redistributed and remain governed by the source databases' terms.

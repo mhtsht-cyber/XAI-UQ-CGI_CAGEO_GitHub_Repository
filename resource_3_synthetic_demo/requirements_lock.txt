@@ -1,0 +1,8 @@
+# platform: Linux-6.18.5-x86_64-with-glibc2.39
+# python: 3.12.3
+numpy==2.4.4
+scipy==1.17.1
+matplotlib==3.10.8
+emcee==3.1.6
+corner==2.3.0
+arviz==1.2.0

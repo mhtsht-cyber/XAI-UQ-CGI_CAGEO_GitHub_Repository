@@ -1,0 +1,15 @@
+ONLINE RESOURCE 3 - MANUSCRIPT FIGURE FILENAME MAPPING
+
+Package update date: 3 August 2026
+
+The primary numerical run was completed before the final manuscript figure renumbering. The original console log is preserved unchanged in run_log.txt and therefore records the legacy output range f7-f12. No numerical computation or diagnostic value was altered during the packaging update.
+
+Legacy output filename -> Current package filename -> Latest manuscript figure
+f7_data.png -> f6_data.png -> Fig. 6
+f8_fit.png -> f7_fit.png -> Fig. 7
+f9_posterior.png -> f8_posterior.png -> Fig. 8
+f10_tradeoff.png -> f9_tradeoff.png -> Fig. 9
+f11_calibration.png -> f10_calibration.png -> Fig. 10
+f12_mismatch.png -> f11_mismatch.png -> Fig. 11
+
+The updated or3_demo.py writes the current package filenames directly. The figure images, numerical outputs, fixed seed, observations, diagnostics, and decision record are otherwise unchanged.

@@ -1,0 +1,58 @@
+{
+  "reference_residual": {
+    "mean_mm": -0.0,
+    "RMSE_mm": 14.505,
+    "sd_mm": 14.505,
+    "Moran_I": -0.0271,
+    "Moran_I_null": -0.0023,
+    "NN_corr": -0.0191
+  },
+  "mcmc": {
+    "Rhat_source": [
+      1.0113,
+      1.0105,
+      1.0125,
+      1.0124
+    ],
+    "bulk_ESS_source": [
+      13614,
+      13269,
+      12708,
+      12884
+    ],
+    "acceptance": 0.485,
+    "autocorr_time": 72.8,
+    "ensemble_centers_source": [
+      [
+        772.9,
+        -1126.4,
+        5188.7,
+        3848564.1
+      ],
+      [
+        1865.4,
+        -43.4,
+        2268.2,
+        3111390.0
+      ],
+      [
+        13.2,
+        -1407.7,
+        3687.4,
+        2221767.9
+      ],
+      [
+        181.5,
+        -537.0,
+        3458.5,
+        3185568.5
+      ]
+    ]
+  },
+  "mismatch": {
+    "chi2r_matched": 0.958,
+    "chi2r_mismatch": 1.188,
+    "Moran_I_matched": -0.0009,
+    "Moran_I_mismatch": 0.1205
+  }
+}

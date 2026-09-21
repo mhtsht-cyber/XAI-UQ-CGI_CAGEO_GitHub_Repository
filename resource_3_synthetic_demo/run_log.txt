@@ -1,0 +1,21 @@
+N_insar=427 N_gnss=9 LOS=[0.6209, -0.112, 0.7759]
+LS joint: {'chi2r': 0.9807998621101544, 'dof': 447, 'n_obs': 454, 'np': 7, 'status': 2}
+MCMC joint: acc=0.48 tau=72.8 Rhat_max(src)=1.0125 bulkESS_min(src)=12708 n_chains=160 draws=6750 nsamp=216000
+dispersed ensemble centers (source):
+ [[ 7.730000e+02 -1.126000e+03  5.189000e+03  3.848564e+06]
+ [ 1.865000e+03 -4.300000e+01  2.268000e+03  3.111390e+06]
+ [ 1.300000e+01 -1.408000e+03  3.687000e+03  2.221768e+06]
+ [ 1.810000e+02 -5.370000e+02  3.459000e+03  3.185569e+06]]
+  x0 (m)    true=     1e+03 med=     1e+03 68w=166 Rhat=1.0113 ESS=13614
+  y0 (m)    true=      -500 med=      -390 68w=173 Rhat=1.0105 ESS=13269
+  d (m)     true=   3.5e+03 med=  3.66e+03 68w=340 Rhat=1.0125 ESS=12708
+  dV (m^3)  true=     3e+06 med=  3.22e+06 68w=5.49e+05 Rhat=1.0124 ESS=12884
+depth-dV rho = 0.946
+depth 68% width: {'InSAR-only': 2162, 'GNSS-only': 381, 'Joint': 340} | red vs InSAR 84% vs GNSS 11%
+MC lin-LS coverage 68: [0.683 0.663 0.683 0.68 ]  95: [0.943 0.953 0.963 0.947]
+depth-width reduction vs InSAR: median 73% [66,80]%
+mismatch: chi2r matched=0.96 two-source=1.19 | Moran I matched=-0.001 mismatch=0.120 (E=-0.002)
+mismatch source bias: [-8.5130000e+02  7.8930000e+02  3.1900000e+02  1.8217623e+06]
+reference residual: mean=-0.00 RMSE=14.51 sd=14.51 Moran_I=-0.027 (E=-0.002) NNcorr=-0.02
+
+Written: f7-f12, insar/gnss_obs.csv, config.json, decision_record.json, ablation.json, diagnostics.json, requirements_lock.txt

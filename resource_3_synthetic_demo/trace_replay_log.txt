@@ -1,0 +1,161 @@
+ensemble 1: step 1500/9000
+ensemble 1: step 3000/9000
+ensemble 1: step 4500/9000
+ensemble 1: step 6000/9000
+ensemble 1: step 7500/9000
+ensemble 1: step 9000/9000
+ensemble 2: step 1500/9000
+ensemble 2: step 3000/9000
+ensemble 2: step 4500/9000
+ensemble 2: step 6000/9000
+ensemble 2: step 7500/9000
+ensemble 2: step 9000/9000
+ensemble 3: step 1500/9000
+ensemble 3: step 3000/9000
+ensemble 3: step 4500/9000
+ensemble 3: step 6000/9000
+ensemble 3: step 7500/9000
+ensemble 3: step 9000/9000
+ensemble 4: step 1500/9000
+ensemble 4: step 3000/9000
+ensemble 4: step 4500/9000
+ensemble 4: step 6000/9000
+ensemble 4: step 7500/9000
+ensemble 4: step 9000/9000
+{
+  "purpose": "independent trace-plot replay using a transparent NumPy Goodman-Weare stretch-move sampler",
+  "primary_reference_implementation": "or3_demo.py using emcee and ArviZ",
+  "seed": 20260729,
+  "shape": {
+    "walker_chains": 160,
+    "retained_draws_per_chain": 1350,
+    "parameters": 7
+  },
+  "mean_acceptance_fraction": 0.4848,
+  "rank_normalized_split_Rhat": {
+    "x0": 1.0131,
+    "y0": 1.0114,
+    "d": 1.0123,
+    "dV": 1.0113,
+    "c0": 1.0122,
+    "cx": 1.0108,
+    "cy": 1.0122
+  },
+  "bulk_ESS": {
+    "x0": 12163,
+    "y0": 12119,
+    "d": 12410,
+    "dV": 12579,
+    "c0": 12812,
+    "cx": 12895,
+    "cy": 12447
+  },
+  "posterior_percentiles_16_50_84": {
+    "x0": [
+      920.840559,
+      1003.364451,
+      1087.793872
+    ],
+    "y0": [
+      -475.646532,
+      -390.036775,
+      -304.643906
+    ],
+    "d": [
+      3489.353408,
+      3655.808976,
+      3830.98999
+    ],
+    "dV": [
+      2954838.37222,
+      3215704.50724,
+      3504801.658286
+    ],
+    "c0": [
+      -0.000436,
+      0.000641,
+      0.001704
+    ],
+    "cx": [
+      1e-06,
+      1e-06,
+      2e-06
+    ],
+    "cy": [
+      -1e-06,
+      -1e-06,
+      -1e-06
+    ]
+  },
+  "running_checkpoints_draws_per_chain": [
+    150,
+    300,
+    600,
+    900,
+    1350
+  ],
+  "running_Rhat_source": [
+    [
+      1.0956,
+      1.1211,
+      1.1217,
+      1.1191
+    ],
+    [
+      1.062,
+      1.059,
+      1.0641,
+      1.0612
+    ],
+    [
+      1.0325,
+      1.0284,
+      1.0316,
+      1.0303
+    ],
+    [
+      1.0235,
+      1.017,
+      1.0214,
+      1.0205
+    ],
+    [
+      1.0131,
+      1.0114,
+      1.0123,
+      1.0113
+    ]
+  ],
+  "running_bulk_ESS_source": [
+    [
+      1219.2,
+      948.2,
+      911.9,
+      929.0
+    ],
+    [
+      1885.9,
+      2073.7,
+      1764.7,
+      1925.2
+    ],
+    [
+      4156.8,
+      4588.9,
+      4705.6,
+      4535.3
+    ],
+    [
+      6476.3,
+      8147.2,
+      7180.5,
+      7650.6
+    ],
+    [
+      12162.5,
+      12118.8,
+      12410.1,
+      12578.6
+    ]
+  ]
+}
